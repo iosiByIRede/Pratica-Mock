@@ -11,10 +11,11 @@
 		0B735A2A2C5142B700A8651A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A292C5142B700A8651A /* ContentView.swift */; };
 		0B735A2C2C5142B900A8651A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B735A2B2C5142B900A8651A /* Assets.xcassets */; };
 		0B735A2F2C5142B900A8651A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B735A2E2C5142B900A8651A /* Preview Assets.xcassets */; };
-		0B735A392C5142B900A8651A /* PraticaMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A382C5142B900A8651A /* PraticaMockTests.swift */; };
+		0B735A392C5142B900A8651A /* APODViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A382C5142B900A8651A /* APODViewModelTests.swift */; };
 		0B735A432C5142B900A8651A /* PraticaMockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A422C5142B900A8651A /* PraticaMockUITests.swift */; };
 		0B735A452C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A442C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift */; };
 		0B735A522C5146A600A8651A /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A512C5146A600A8651A /* Picture.swift */; };
+		0B735A552C51807D00A8651A /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A542C51807D00A8651A /* MockNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,11 +42,12 @@
 		0B735A2B2C5142B900A8651A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B735A2E2C5142B900A8651A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B735A342C5142B900A8651A /* PraticaMockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PraticaMockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B735A382C5142B900A8651A /* PraticaMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticaMockTests.swift; sourceTree = "<group>"; };
+		0B735A382C5142B900A8651A /* APODViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModelTests.swift; sourceTree = "<group>"; };
 		0B735A3E2C5142B900A8651A /* PraticaMockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PraticaMockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B735A422C5142B900A8651A /* PraticaMockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticaMockUITests.swift; sourceTree = "<group>"; };
 		0B735A442C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticaMockUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0B735A512C5146A600A8651A /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		0B735A542C51807D00A8651A /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				0B735A532C515CD700A8651A /* NetworkTests */,
-				0B735A382C5142B900A8651A /* PraticaMockTests.swift */,
 			);
 			path = PraticaMockTests;
 			sourceTree = "<group>";
@@ -134,6 +135,8 @@
 		0B735A532C515CD700A8651A /* NetworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B735A382C5142B900A8651A /* APODViewModelTests.swift */,
+				0B735A542C51807D00A8651A /* MockNetworkManager.swift */,
 			);
 			path = NetworkTests;
 			sourceTree = "<group>";
@@ -278,7 +281,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B735A392C5142B900A8651A /* PraticaMockTests.swift in Sources */,
+				0B735A552C51807D00A8651A /* MockNetworkManager.swift in Sources */,
+				0B735A392C5142B900A8651A /* APODViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
