@@ -116,6 +116,7 @@
 		0B735A372C5142B900A8651A /* PraticaMockTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B735A532C515CD700A8651A /* NetworkTests */,
 				0B735A382C5142B900A8651A /* PraticaMockTests.swift */,
 			);
 			path = PraticaMockTests;
@@ -128,6 +129,13 @@
 				0B735A442C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift */,
 			);
 			path = PraticaMockUITests;
+			sourceTree = "<group>";
+		};
+		0B735A532C515CD700A8651A /* NetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

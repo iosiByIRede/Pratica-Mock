@@ -10,12 +10,12 @@ import SwiftUI
 @main
 struct PraticaMockApp: App {
     
-    var network = Network()
+    var viewModel = APODViewModel(network: NetworkManager.shared)
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(network)
+                .environmentObject(viewModel)
         }
     }
 }

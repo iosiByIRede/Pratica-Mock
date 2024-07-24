@@ -9,15 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var network: Network
+    @EnvironmentObject var viewModel: APODViewModel
     @State var urlString: String = ""
     @State var text = ""
     @State var subtitle = ""
+    @State var date = Date()
     
     var body: some View {
         VStack(alignment: .leading) {
             Text("Astronomy Picture Of The Day")
                 .font(.title2)
+            DatePicker(selection: $date, displayedComponents: .date) {
+                Text("Data")
+                    .font(.subheadline)
+            }.onChange(of: date) {
+                updateView()
+
+            }
             AsyncImage(url: URL(string: urlString)) { image in
                 image.resizable()
             } placeholder: {
@@ -33,32 +41,44 @@ struct ContentView: View {
         }
         .padding()
         .onAppear {
-            Task {
-                do {
-                    try await network.getPicture()
-                    guard let picture = network.picture else {
-                        return
-                    }
-                    
-                    urlString = picture.hdurl
-                    
-                    text = picture.explanation
-                    
-                    subtitle = picture.title
-                    
-                    if picture.copyright != nil {
-                        subtitle += " by " + picture.copyright!
-                    }
-                } catch {
-                    print(error)
-                    fatalError()
+            updateView()
+        }
+    }
+    
+    func resetView() {
+        urlString = ""
+        text = ""
+        subtitle = ""
+    }
+    
+    func updateView() {
+        resetView()
+        Task {
+            do {
+                try await viewModel.getPicture(from: date)
+                guard let picture = viewModel.picture else {
+                    return
                 }
+                
+                urlString = picture.url
+                
+                text = picture.explanation
+                
+                subtitle = picture.title
+                
+                if picture.copyright != nil {
+                    subtitle += " by " + picture.copyright!
+                }
+            } catch {
+                print(error)
+                fatalError()
             }
         }
+
     }
 }
 
 #Preview {
     ContentView()
-        .environmentObject(Network())
+        .environmentObject(APODViewModel(network: NetworkManager.shared))
 }
