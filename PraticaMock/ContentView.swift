@@ -64,7 +64,9 @@ struct ContentView: View {
                 
                 text = picture.explanation
                 
-                subtitle = picture.title
+                if picture.title != nil{
+                    subtitle = picture.title!
+                }
                 
                 if picture.copyright != nil {
                     subtitle += " by " + picture.copyright!

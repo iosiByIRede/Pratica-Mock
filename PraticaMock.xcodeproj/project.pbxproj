@@ -16,6 +16,8 @@
 		0B735A452C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A442C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift */; };
 		0B735A522C5146A600A8651A /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A512C5146A600A8651A /* Picture.swift */; };
 		0B735A552C51807D00A8651A /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A542C51807D00A8651A /* MockNetworkManager.swift */; };
+		0B735A572C5292A600A8651A /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A562C5292A600A8651A /* APODViewModel.swift */; };
+		0B735A592C5292C400A8651A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B735A582C5292C400A8651A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0B735A442C5142B900A8651A /* PraticaMockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraticaMockUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0B735A512C5146A600A8651A /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		0B735A542C51807D00A8651A /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		0B735A562C5292A600A8651A /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		0B735A582C5292C400A8651A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				0B735A2B2C5142B900A8651A /* Assets.xcassets */,
 				0B735A2D2C5142B900A8651A /* Preview Content */,
 				0B735A512C5146A600A8651A /* Picture.swift */,
+				0B735A562C5292A600A8651A /* APODViewModel.swift */,
+				0B735A582C5292C400A8651A /* NetworkManager.swift */,
 			);
 			path = PraticaMock;
 			sourceTree = "<group>";
@@ -273,6 +279,8 @@
 			files = (
 				0B735A522C5146A600A8651A /* Picture.swift in Sources */,
 				0B735A2A2C5142B700A8651A /* ContentView.swift in Sources */,
+				0B735A592C5292C400A8651A /* NetworkManager.swift in Sources */,
+				0B735A572C5292A600A8651A /* APODViewModel.swift in Sources */,
 				0B735A282C5142B700A8651A /* PraticaMockApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
